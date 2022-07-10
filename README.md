@@ -5,12 +5,7 @@ This is a furry fursona generator where you can generate fursona.
 
 Version 0.0.20
 
-## Options and Look
 
-![App Screenshot](https://raw.githubusercontent.com/FujiTheFox/FursonaGenerator/main/Screenshots%20for%20readme%20(Ignore%20this)/Screenshot%202022-07-10%20184500.png)
-
-## Results/Fursona
-![App Screenshot](https://raw.githubusercontent.com/FujiTheFox/FursonaGenerator/main/Screenshots%20for%20readme%20(Ignore%20this)/fursona.gif)
 
 
 ## Setup
@@ -45,7 +40,12 @@ There are many websites where you can download fonts. (im using google fonts web
 - Now open FujiSpawn.py and change the font to its correct name in the folder (Most font format are .ttf)
 - This is how it looks (".\Images/Fonts/font here.format", 40)  replace (font here.format with you font file)
 
+## Options and Look
 
+![App Screenshot](https://raw.githubusercontent.com/FujiTheFox/FursonaGenerator/main/Screenshots%20for%20readme%20(Ignore%20this)/Screenshot%202022-07-10%20184500.png)
+
+## Results/Fursona
+![App Screenshot](https://raw.githubusercontent.com/FujiTheFox/FursonaGenerator/main/Screenshots%20for%20readme%20(Ignore%20this)/fursona.gif)
 
 
 ## Features
