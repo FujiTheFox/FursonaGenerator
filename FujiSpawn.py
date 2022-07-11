@@ -2,6 +2,10 @@ from PIL import Image, ImageFont, ImageDraw
 import random
 import time
 
+############################CONFIG#####################
+font = ImageFont.truetype(".\Images/Fonts/Roboto-Regular.ttf", 40)
+
+
 Fursonanames = ["Wolf" , "BlueWolf" , "Amazing wolf" , "Wolf Proto"]
 randomanme = random.choice(Fursonanames)
 
@@ -14,14 +18,14 @@ randombody =  random.randint(1, 5)
 
 
 
-template = Image.open(fr"D:/scripts/Images/templates/1.gif").convert("RGBA")
-headdesgin = Image.open(fr"D:/scripts/Images/main/Head/1.gif").convert("RGBA")
-background = Image.open(fr"D:/scripts/Images/backgroundimages/{randombackground}.gif").convert("RGBA")
-hands = Image.open(fr"D:/scripts/Images/main/Arms/{randomhands}.gif").convert("RGBA")
-legs = Image.open(fr"D:/scripts/Images/main/Legs/{randomlegs}.gif").convert("RGBA")
-bodydesgin = Image.open(fr"D:/scripts/Images/main/Body/{randombody}.gif").convert("RGBA")
+template = Image.open(fr".\Images/templates/1.gif").convert("RGBA")
+headdesgin = Image.open(fr".\Images/main/Head/1.gif").convert("RGBA")
+background = Image.open(fr".\Images/backgroundimages/{randombackground}.gif").convert("RGBA")
+hands = Image.open(fr".\Images/main/Arms/{randomhands}.gif").convert("RGBA")
+legs = Image.open(fr".\Images/main/Legs/{randomlegs}.gif").convert("RGBA")
+bodydesgin = Image.open(fr".\Images/main/Body/{randombody}.gif").convert("RGBA")
 
-
+######################End of config##################
 
 
 print ("---------------------------------------------")
@@ -53,12 +57,7 @@ if option == "1":
     ###################################
 
     draw = ImageDraw.Draw(bodystage)
-    font = ImageFont.truetype(".\Images/Fonts/font here.format", 40)
-    draw.text((0, 0),f"Name: {randomanme}",(255,255,255),font=font)
-    draw.text((0, 40),f"Age: {random.randint(10, 35)}",(255,255,255),font=font)
-    draw.text((0, 80),f"",(255,255,255),font=font)
 
- 
 
 
 
@@ -92,7 +91,6 @@ elif option == "2":
     ###################################
 
     draw = ImageDraw.Draw(bodystage)
-    font = ImageFont.truetype(".\Images/Fonts/font here.format", 40)
     draw.text((0, 0),f"Name: ___________",(255,255,255),font=font)
     draw.text((0, 40),f"Age: ___________",(255,255,255),font=font)
     draw.text((0, 80),f"",(255,255,255),font=font)
@@ -160,7 +158,6 @@ elif option == "4":
     ###################################
 
     draw = ImageDraw.Draw(bodystage)
-    font = ImageFont.truetype(".\Images/Fonts/font here.format", 40)
     draw.text((0, 0),f"Name: {randomanme}",(255,255,255),font=font)
     draw.text((0, 40),f"Age: {random.randint(10, 35)}",(255,255,255),font=font)
     draw.text((0, 80),f"",(255,255,255),font=font)
