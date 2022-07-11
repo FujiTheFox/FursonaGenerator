@@ -57,7 +57,9 @@ if option == "1":
     ###################################
 
     draw = ImageDraw.Draw(bodystage)
-
+    draw.text((0, 0),f"Name: {randomanme}",(255,255,255),font=font)
+    draw.text((0, 40),f"Age: {random.randint(10, 35)}",(255,255,255),font=font)
+    draw.text((0, 80),f"",(255,255,255),font=font)
 
 
 
@@ -153,14 +155,7 @@ elif option == "4":
     iguess = Image.alpha_composite(someething , legs)
     bodystage = Image.alpha_composite(iguess, bodydesgin)
 
-    ###################################
-    # This adds the text to the image #
-    ###################################
 
-    draw = ImageDraw.Draw(bodystage)
-    draw.text((0, 0),f"Name: {randomanme}",(255,255,255),font=font)
-    draw.text((0, 40),f"Age: {random.randint(10, 35)}",(255,255,255),font=font)
-    draw.text((0, 80),f"",(255,255,255),font=font)
 
 
     ###################################
